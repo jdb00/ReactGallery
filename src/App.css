@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css';
+
+body{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    margin: auto;
+    display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.photos{
+    flex: 0 0 80%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.photo{
+    width: 400px;
+    margin: 1em;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background-color: #f0f0f0;
 }
 
-.App-link {
-  color: #61dafb;
+img{
+    border-radius: .25em .25em 0 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.photo-content{
+  position: relative;
+  padding: 1em;
 }
+
+.photo-description{
+  padding-top:.25em;
+}
+
+i{
+    position: absolute;
+    padding: .5em;
+    top:0;
+    right: 0;
+    color: firebrick;
+}
+
+.add-photo{
+    flex: 0 0 10%;
+    padding: 2em;
+    box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.2);
+    background: #f0f0f0;
+}
+
+label, input{
+    display: block;
+}
+
+label{
+    padding-bottom: .5em;
+}
+
+button{
+    display: block;
+    border-radius: 5em;
+    background-color: forestgreen;
+    border: 1px white solid;
+    padding: .5em 1em;
+    float: right;
+    outline: none;
+    color: white;
+}
+
+.form-control{
+    border-radius: 5em;
+    border: 1px black solid;
+    padding: .5em 1em;
+    outline: none;
+}
+
+.form-group{
+    padding-bottom: 1em;
+}
+
