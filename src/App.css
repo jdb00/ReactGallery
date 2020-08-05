@@ -33,8 +33,13 @@ img{
   padding: 1em;
 }
 
+.photo-location{
+    font-weight: bold;
+}
+
 .photo-description{
-  padding-top:.25em;
+  padding-top:.25rem;
+  font-size: .7em;
 }
 
 i{
@@ -82,3 +87,6 @@ button{
     padding-bottom: 1em;
 }
 
+.update-control{
+    
+}

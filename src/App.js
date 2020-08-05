@@ -13,8 +13,8 @@ class App extends Component {
       photos: [
         {
           id: 1,
-          location: 'NZ',
-          description: 'This is a photo'
+          location: 'New Zealand',
+          description: 'This is my nice photo that I took while on holiday in New Zealand'
         },
         {
           id: 2,
@@ -69,6 +69,19 @@ class App extends Component {
     })
   }
 
+  updatePhoto = (id, data) => {
+    console.log(id, data)
+
+    var updated = this.state.photos.map((item) => {
+      
+      return (item.id === id) ? {...item, ...data} : item
+    })
+
+    this.setState({
+      photos: updated
+    })
+  }
+
   render(){
     return (
         <div className="wrap">
@@ -82,6 +95,7 @@ class App extends Component {
                       key: item.id,
                       id: item.id,
                       removePhoto: this.removePhoto,
+                      updatePhoto: this.updatePhoto,
                       location: item.location,
                       description: item.description
                     }
