@@ -52,8 +52,6 @@ class NewPhotoForm extends Component {
 
                 <button type="submit" className="btn btn-primary" onClick={this.handleClick}>Add</button>
 
-                <input type="text" className="update-control" id="location-input" onChange={this.handleLocationInputChange} onBlur={this.handleLocationInputBlur}/>
-
             </div>
         )
     }
